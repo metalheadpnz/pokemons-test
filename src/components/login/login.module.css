@@ -17,20 +17,22 @@
     color: #A0A0A0;
 }
 
-.pass {
-    background-color: #ECECEC;
-    width: 278px;
-    height: 68px;
+
+.positionLoginField{
+    margin-top: 55px;
+    margin-left: 59px;
+}
+
+.positionPasswordField{
     margin-top: 49px;
     margin-left: 59px;
 }
 
-.loginField {
+.inputField {
     background-color: #ECECEC;
     width: 278px;
     height: 68px;
-    margin-top: 55px;
-    margin-left: 59px;
+
 }
 
 .arrowLoginBtn {
