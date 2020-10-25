@@ -1,0 +1,24 @@
+.cardMini {
+    border: 1px solid #EBEBEB;;
+    width: 217px;
+    height: 217px;
+    background-color: #EBEBEB;
+}
+
+.miniPic {
+    width: 189px;
+    height: 133px;
+    background: #C4C4C4;
+    margin: 16px auto 15px auto;
+    /*border: 1px solid black;*/
+}
+
+.pokemonData {
+    /*border: 1px solid black;*/
+    margin-top: 11px;
+    margin-left: 14px;
+    margin-right: 14px;
+
+    font-size: 12px;
+    line-height: 14px;
+}
