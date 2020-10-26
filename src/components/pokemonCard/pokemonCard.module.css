@@ -1,0 +1,88 @@
+.wrap {
+
+}
+
+.header {
+    background-color: #EBEBEB;
+    margin: 0 auto;
+    margin-top: 18px;
+    /*position: absolute;*/
+    width: 1032px;
+    height: 61px;
+    left: 59px;
+    top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logout {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-right: 33px;
+}
+
+.back {
+    margin-left: 21px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.contentContainer {
+    /*border: 1px dashed black;*/
+    width: 1032px;
+    height: 883px;
+    margin: 30px auto 0px auto;
+    display: flex;
+
+}
+
+.bigPic {
+    min-width: 622px;
+    height: 438px;
+    background: #C4C4C4;
+    /*display: inline-block;*/
+    /*border: 1px solid black;*/
+    /*margin-top: 30px;*/
+    /*margin-left: 22px;*/
+}
+
+.infoPanel {
+    /*display: inline-block;*/
+    /*border: 1px solid black;*/
+    margin-left: 34px;
+    width: 410px;
+    height: 438px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 52px;
+}
+
+.hr{
+    color: #DBDBDB;
+    width: 243px;
+   margin-left: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.flex{
+    display: flex;
+}
+
+.description{
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 61px;
+}
+
+.leftPanel{
+    width: 622px;
+}
