@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from "react";
 import styles from "../login/login.module.css";
 import arrowLoginBtn from "../../img/arrowBtn.svg";
+import Categories from "../categories/categories";
+import {Redirect} from "react-router-dom";
 
-function Conform() {
+function Conform(props) {
 
     function createOTP() {
-        console.log('OTP')
         return Math.floor(1000 + Math.random() * (9999 + 1 - 1000))
-
     }
 
     function OTPOnClick() {
@@ -15,16 +15,14 @@ function Conform() {
             setState({
                 ...state, conform: true, errorClass: null
             })
-            console.log('correct password')
+
         } else {
             setState({...state, errorClass: styles.error})
-            console.log('incorrect password')
         }
     }
 
     function onInputChange(event) {
         setState({...state, input: event.target.value})
-        console.log(event.target.value)
     }
 
     let [state, setState] = useState({
@@ -38,10 +36,10 @@ function Conform() {
     useEffect(() => {
             // createOTP();
             setState({...state, OTP: createOTP()});
-            console.log('effect')
         }, []
     )
-
+    if (state.conform) return <Redirect to={"/categories"}/>
+    if (!props.auth) return <Redirect to={"/login"}/>
 
     return (
         <>

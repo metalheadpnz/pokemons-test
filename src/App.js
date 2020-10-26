@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Login from "./components/login/login";
 import Conform from "./components/conform/conform";
@@ -11,15 +11,26 @@ import {Route} from "react-router-dom";
 
 function App() {
 
-    const [auth, setAuth] = React.useState(false)
+    const [auth, setAuth] = useState(false)
 
     return (
         <div className="App">
-            {/*<Route exact path='/' render={()=> <Login auth={auth} setAuth={setAuth}/>}/>*/}
-            {/*<Route path='/login' render={()=> <Login auth={auth} setAuth={setAuth}/>}/>*/}
-            {/*<Route path='/categories' component={Categories}/>*/}
+            {/*{auth*/}
+            {/*    ? <Categories/>*/}
+            {/*    : <Login auth={auth} setAuth={setAuth}/>*/}
+            {/*}*/}
             {/*<Login auth={auth} setAuth={setAuth}/>*/}
-            <Conform/>
+            {/*<Conform/>*/}
+            {/*<Categories/>*/}
+            {/*<PokemonCard/>*/}
+
+            <Route exact path='/' render={() => <Login auth={auth} setAuth={setAuth}/>}/>
+            <Route path='/login' render={() => <Login auth={auth} setAuth={setAuth}/>}/>
+            <Route path='/conform' render={() => <Conform auth={auth} setAuth={setAuth}/>}/>
+            <Route path='/categories' render={() => <Categories auth={auth} setAuth={setAuth}/>}/>
+            <Route path='/card' render={() => <PokemonCard auth={auth} setAuth={setAuth}/>}/>
+            {/*<Login auth={auth} setAuth={setAuth}/>*/}
+            {/*<Conform/>*/}
             {/*<Categories/>*/}
             {/*<PokemonCard />*/}
 

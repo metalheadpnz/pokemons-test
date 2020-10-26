@@ -2,8 +2,12 @@ import React from "react";
 import styles from "./categories.module.css";
 import arrowMini from "../../img/Arrow_mini.svg"
 import CardMini from "../pokemonCardMini/pokemonCardMini";
+import {Redirect} from "react-router-dom";
 
-function Categories() {
+function Categories(props) {
+
+    if (!props.auth) return <Redirect to={"/login"}/>
+
     return (
         <div className={styles.wraper}>
             <header className={styles.header}>
