@@ -6,14 +6,22 @@ import Categories from "./components/categories/categories";
 import CardMini from "./components/pokemonCardMini/pokemonCardMini";
 import PokemonCard from "./components/pokemonCard/pokemonCard";
 
+import {Route} from "react-router-dom";
+
 
 function App() {
+
+    const [auth, setAuth] = React.useState(false)
+
     return (
         <div className="App">
-            {/*<Login/>*/}
-            {/*<Conform/>*/}
+            {/*<Route exact path='/' render={()=> <Login auth={auth} setAuth={setAuth}/>}/>*/}
+            {/*<Route path='/login' render={()=> <Login auth={auth} setAuth={setAuth}/>}/>*/}
+            {/*<Route path='/categories' component={Categories}/>*/}
+            {/*<Login auth={auth} setAuth={setAuth}/>*/}
+            <Conform/>
             {/*<Categories/>*/}
-            <PokemonCard />
+            {/*<PokemonCard />*/}
 
             {/*<CardMini/>*/}
 

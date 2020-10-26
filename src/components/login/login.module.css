@@ -1,4 +1,4 @@
-.wraper {
+.wrap {
     background-color: #FAFAFA;
     width: 396px;
     height: 426px;
@@ -18,12 +18,12 @@
 }
 
 
-.positionLoginField{
+.positionLoginField {
     margin-top: 55px;
     margin-left: 59px;
 }
 
-.positionPasswordField{
+.positionPasswordField {
     margin-top: 49px;
     margin-left: 59px;
 }
@@ -40,7 +40,12 @@
     position: absolute;
     left: 150px;
     top: 289px;
+    /*transition: 0.3s;*/
+}
 
+.arrowLoginBtn:hover {
+    cursor: pointer;
+    /*transform: scale(1.1);*/
 }
 
 .label {
@@ -64,5 +69,8 @@
     color: #000000;
 
     padding: 0px;
+}
 
+.error{
+    background-color:  #ebcece;
 }
