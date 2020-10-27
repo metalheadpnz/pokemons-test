@@ -91,6 +91,7 @@ function Categories(props) {
                     <div className={styles.pannel}>
                         <div className={`${styles.categorySelect} ${styles.type}`}>
                             <select name="type" id="" className={styles.select} onChange={onSelected}>
+                                <option value="" selected disabled hidden>Type</option>
                                 {state.types.map((item) => <option value={item} key={item}>{item}</option>)}
                             </select>
                             <span className={styles.categoryLabel}>
@@ -100,6 +101,7 @@ function Categories(props) {
 
                         <div className={styles.categorySelect}>
                             <select name="subtype" id="" className={styles.select} onChange={onSelected}>
+                                <option value="" selected disabled hidden>Subtype</option>
                                 {state.subtypes.map((item) => <option value={item} key={item}>{item}</option>)}
                             </select>
                             <span className={styles.categoryLabel}>
