@@ -42,19 +42,20 @@ function PokemonCard(props) {
                     <div className={styles.leftPanel}>
                         <div className={styles.bigPic}><img className={styles.imgTest} src={state.card.imageUrlHiRes}
                                                             alt=""/></div>
-                        {state.card.attacks.map((item) => <div className={styles.description}
-                                                               key={item.name}>{item.text}</div>)}
+                        {state.card.attacks?
+                            state.card.attacks.map((item) => <div className={styles.description}
+                                                               key={item.name}>{item.text}</div>):"error"}
                     </div>
                     <div className={styles.infoPanel}>
                         Pokemon name: {state.card.name}
                         <br/>
-                        Type: {state.card.types.join(' ')}
+                        Type: {state.card.types?state.card.types.join(' '):"error"}
                         <br/>
                         SubType: {state.card.subtype}
                         <hr className={styles.hr}/>
-                        attackDamage: {state.card.attacks[0].damage}
+                        attackDamage: {state.card.attacks?state.card.attacks[0].damage:"error"}
                         <br/>
-                        attackCost: {state.card.attacks[0].cost}
+                        attackCost: {state.card.attacks?state.card.attacks[0].cost:"error"}
                         <br/>
                         resistances: {state.card.resistances
                         ? state.card.resistances.map((item) => <span key={item.type}>{item.type}</span>)
