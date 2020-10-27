@@ -21,16 +21,19 @@
     line-height: 21px;
     font-weight: 400;
     margin-right: 33px;
+    cursor: pointer;
 }
 
 .back {
     margin-left: 21px;
-
+    text-decoration: none;
+    color: black;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
+    cursor: pointer;
 }
 
 .contentContainer {

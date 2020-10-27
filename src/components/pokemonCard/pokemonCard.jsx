@@ -2,16 +2,30 @@ import React, {useEffect, useState} from "react";
 import styles from "./pokemonCard.module.css";
 import * as axios from "axios";
 import Preloader from "../preloader/preloader";
+import {NavLink, Redirect} from "react-router-dom";
 
-//xy7-10 dp6-90
-function PokemonCard() {
+
+function PokemonCard(props) {
+    let id = window.location.pathname.split('d/')[1]
+
     let [state, setState] = useState({isLoading: true})
     useEffect(() => {
-        axios.get("https://api.pokemontcg.io/v1/cards/dp6-90").then(response => {
-
+        axios.get(`https://api.pokemontcg.io/v1/cards/${id?id:"dp6-90"}`).then(response => {
             setState({...state, card: response.data.card, isLoading: false});
         })
     }, [])
+
+    function logout() {
+        props.setAuth(false)
+    }
+
+    console.log(state.card)
+    // function back() {
+    //     console.log(1)
+    // }
+
+
+    if (!props.auth) return <Redirect to={"/login"}/>
 
     if (state.isLoading) {
         return (
@@ -21,8 +35,8 @@ function PokemonCard() {
         return (
             <div className={styles.wrap}>
                 <header className={styles.header}>
-                    <div className={styles.back}>{"<"} Back</div>
-                    <div className={styles.logout}>Logout</div>
+                    <NavLink className={styles.back} to={"/categories"}>{"<"} Back</NavLink>
+                    <div className={styles.logout} onClick={logout}>Logout</div>
                 </header>
                 <div className={styles.contentContainer}>
                     <div className={styles.leftPanel}>
@@ -45,7 +59,6 @@ function PokemonCard() {
                         resistances: {state.card.resistances
                         ? state.card.resistances.map((item) => <span key={item.type}>{item.type}</span>)
                         : <span>none</span>}
-                        {console.log(!!state.card.resistances)}
                         <br/>
                         evolvesFrom: {state.card.evolvesFrom}
                     </div>
@@ -53,6 +66,8 @@ function PokemonCard() {
             </div>
         )
     }
+
+
 }
 
 export default PokemonCard;
