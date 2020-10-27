@@ -7,6 +7,7 @@ import CardMini from "./components/pokemonCardMini/pokemonCardMini";
 import PokemonCard from "./components/pokemonCard/pokemonCard";
 
 import {Route} from "react-router-dom";
+import Preloader from "./components/preloader/preloader";
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
             {/*<Conform/>*/}
             {/*<Categories/>*/}
             <PokemonCard />
-
+            {/*<Preloader/>*/}
             {/*<CardMini/>*/}
 
 
