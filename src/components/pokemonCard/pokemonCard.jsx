@@ -1,7 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styles from "./pokemonCard.module.css";
 
+/*    useEffect(() => {
+            // createOTP();
+            setState({...state, OTP: createOTP()});
+        }, []
+    )
+*/
+
 function PokemonCard() {
+    useEffect(()=> {
+        console.log('effect')
+    }, [])
+
     return (
         <div className={styles.wrap}>
             <header className={styles.header}>

@@ -24,15 +24,17 @@ function App() {
             {/*<Categories/>*/}
             {/*<PokemonCard/>*/}
 
-            <Route exact path='/' render={() => <Login auth={auth} setAuth={setAuth}/>}/>
-            <Route path='/login' render={() => <Login auth={auth} setAuth={setAuth}/>}/>
-            <Route path='/conform' render={() => <Conform auth={auth} setAuth={setAuth}/>}/>
-            <Route path='/categories' render={() => <Categories auth={auth} setAuth={setAuth}/>}/>
-            <Route path='/card' render={() => <PokemonCard auth={auth} setAuth={setAuth}/>}/>
+            {/*TRUE*/}
+            {/*<Route exact path='/' render={() => <Login auth={auth} setAuth={setAuth}/>}/>*/}
+            {/*<Route path='/login' render={() => <Login auth={auth} setAuth={setAuth}/>}/>*/}
+            {/*<Route path='/conform' render={() => <Conform auth={auth} setAuth={setAuth}/>}/>*/}
+            {/*<Route path='/categories' render={() => <Categories auth={auth} setAuth={setAuth}/>}/>*/}
+            {/*<Route path='/card' render={() => <PokemonCard auth={auth} setAuth={setAuth}/>}/>*/}
+
             {/*<Login auth={auth} setAuth={setAuth}/>*/}
             {/*<Conform/>*/}
             {/*<Categories/>*/}
-            {/*<PokemonCard />*/}
+            <PokemonCard />
 
             {/*<CardMini/>*/}
 

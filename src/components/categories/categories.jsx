@@ -6,7 +6,7 @@ import {Redirect} from "react-router-dom";
 
 function Categories(props) {
 
-    if (!props.auth) return <Redirect to={"/login"}/>
+    // if (!props.auth) return <Redirect to={"/login"}/> РАСКОМЕНТИРОВАТЬ!!!!!
 
     return (
         <div className={styles.wraper}>

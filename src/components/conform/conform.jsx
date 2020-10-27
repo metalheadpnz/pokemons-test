@@ -32,12 +32,12 @@ function Conform(props) {
         errorClass: null
     });
 
-
     useEffect(() => {
             // createOTP();
             setState({...state, OTP: createOTP()});
         }, []
     )
+
     if (state.conform) return <Redirect to={"/categories"}/>
     if (!props.auth) return <Redirect to={"/login"}/>
 
