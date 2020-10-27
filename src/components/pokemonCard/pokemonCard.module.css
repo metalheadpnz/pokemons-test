@@ -6,7 +6,7 @@
     background-color: #EBEBEB;
     margin: 0 auto;
     margin-top: 18px;
-    /*position: absolute;*/
+
     width: 1032px;
     height: 61px;
     left: 59px;
@@ -37,7 +37,6 @@
 }
 
 .contentContainer {
-    /*border: 1px dashed black;*/
     width: 1032px;
     height: 883px;
     margin: 30px auto 0px auto;
@@ -47,19 +46,10 @@
 
 .bigPic {
     min-width: 622px;
-    /*height: 438px;*/
     height: 378px;
-    /*background: #C4C4C4;*/
-
-    /*display: inline-block;*/
-    /*border: 1px solid black;*/
-    /*margin-top: 30px;*/
-    /*margin-left: 22px;*/
 }
 
 .infoPanel {
-    /*display: inline-block;*/
-    /*border: 1px solid black;*/
     margin-left: 34px;
     width: 410px;
     height: 438px;
@@ -67,7 +57,6 @@
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    /*line-height: 52px;*/
     line-height: 44px;
 }
 
@@ -75,8 +64,6 @@
     color: #DBDBDB;
     width: 243px;
     margin-left: 0px;
-    /*margin-top: 40px;*/
-    /*margin-bottom: 40px;*/
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -88,7 +75,6 @@
 .description {
     font-size: 18px;
     line-height: 21px;
-    /*margin-top: 61px;*/
     margin-top: 36px;
 }
 
@@ -98,7 +84,6 @@
 
 .imgTest {
     position: absolute;
-    /*left: 50px;*/
     left: 40px;
     top: -0px;
     clip: rect(110px, 650px, 480px, 50px);

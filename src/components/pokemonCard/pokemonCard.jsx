@@ -19,12 +19,6 @@ function PokemonCard(props) {
         props.setAuth(false)
     }
 
-    console.log(state.card)
-    // function back() {
-    //     console.log(1)
-    // }
-
-
     if (!props.auth) return <Redirect to={"/login"}/>
 
     if (state.isLoading) {
@@ -67,8 +61,6 @@ function PokemonCard(props) {
             </div>
         )
     }
-
-
 }
 
 export default PokemonCard;

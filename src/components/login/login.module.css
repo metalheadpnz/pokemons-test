@@ -9,7 +9,6 @@
     left: 0;
     margin: auto;
 
-    /*font-family: Roboto;*/
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -40,12 +39,12 @@
     position: absolute;
     left: 150px;
     top: 289px;
-    /*transition: 0.3s;*/
+
 }
 
 .arrowLoginBtn:hover {
     cursor: pointer;
-    /*transform: scale(1.1);*/
+
 }
 
 .label {

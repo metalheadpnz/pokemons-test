@@ -55,12 +55,8 @@
 }
 
 .categoryLabel {
-    /*margin-left: 19px;*/
-    /*width: 245px;*/
-    position: absolute;
-    /*background-color: brown;*/
+     position: absolute;
     left: 234px;
-
 }
 
 .arrowMini {
@@ -80,8 +76,7 @@
     width: 278px;
     height: 68px;
     margin: 68px auto;
-    /*display: flex;*/
-    /*align-items: center;*/
+
     border: none;
     font-family: Roboto;
     padding-left: 20px;

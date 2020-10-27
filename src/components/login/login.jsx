@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 import styles from './login.module.css';
 import arrowLoginBtn from '../../img/arrowBtn.svg'
 import {Redirect} from "react-router-dom";
-import Categories from "../categories/categories";
-import Conform from "../conform/conform";
 
 function Login(props) {
     let [state, setState] = useState({

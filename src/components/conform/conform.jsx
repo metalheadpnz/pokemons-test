@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import styles from "../login/login.module.css";
 import arrowLoginBtn from "../../img/arrowBtn.svg";
-import Categories from "../categories/categories";
 import {Redirect} from "react-router-dom";
 
 function Conform(props) {
