@@ -13,7 +13,6 @@ function Categories(props) {
 
     useEffect(() => {
         axios.get("https://api.pokemontcg.io/v1/types").then(response => {
-            // console.log(1);
             axios.get("https://api.pokemontcg.io/v1/subtypes").then(response2 => {
                 setState({
                     ...state,
@@ -68,7 +67,8 @@ function Categories(props) {
                         </div>
 
                         <div className={styles.categorySelect}>
-                            <select name="subtype" id="" defaultValue="" className={styles.select} onChange={onSelected}>
+                            <select name="subtype" id="" defaultValue="" className={styles.select}
+                                    onChange={onSelected}>
                                 <option value="" selected disabled hidden>Subtype</option>
                                 {state.subtypes.map((item) => <option value={item} key={item}>{item}</option>)}
                             </select>
@@ -78,7 +78,7 @@ function Categories(props) {
                         </div>
                     </div>
                     <div className={styles.main}>
-                        {cards.map((item) => <NavLink key={item.id} to={`/card/${item.id}` }><img
+                        {cards.map((item) => <NavLink key={item.id} to={`/card/${item.id}`}><img
                             className={styles.smallPic} key={item.id} src={item.imageUrl} alt=""/></NavLink>)}
                     </div>
                 </div>
