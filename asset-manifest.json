@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/pokemons-test/static/css/main.5aa410eb.chunk.css",
+    "main.js": "/pokemons-test/static/js/main.93412481.chunk.js",
+    "main.js.map": "/pokemons-test/static/js/main.93412481.chunk.js.map",
+    "runtime-main.js": "/pokemons-test/static/js/runtime-main.e72a5e54.js",
+    "runtime-main.js.map": "/pokemons-test/static/js/runtime-main.e72a5e54.js.map",
+    "static/js/2.c8d3a454.chunk.js": "/pokemons-test/static/js/2.c8d3a454.chunk.js",
+    "static/js/2.c8d3a454.chunk.js.map": "/pokemons-test/static/js/2.c8d3a454.chunk.js.map",
+    "index.html": "/pokemons-test/index.html",
+    "precache-manifest.1a606af78347f91ee9af20c4f3b1a457.js": "/pokemons-test/precache-manifest.1a606af78347f91ee9af20c4f3b1a457.js",
+    "service-worker.js": "/pokemons-test/service-worker.js",
+    "static/css/main.5aa410eb.chunk.css.map": "/pokemons-test/static/css/main.5aa410eb.chunk.css.map",
+    "static/js/2.c8d3a454.chunk.js.LICENSE.txt": "/pokemons-test/static/js/2.c8d3a454.chunk.js.LICENSE.txt",
+    "static/media/Arrow_mini.svg": "/pokemons-test/static/media/Arrow_mini.61ead016.svg",
+    "static/media/arrowBtn.svg": "/pokemons-test/static/media/arrowBtn.fc9aaac3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e72a5e54.js",
+    "static/js/2.c8d3a454.chunk.js",
+    "static/css/main.5aa410eb.chunk.css",
+    "static/js/main.93412481.chunk.js"
+  ]
+}
