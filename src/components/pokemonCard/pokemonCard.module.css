@@ -80,11 +80,12 @@
 
 .leftPanel {
     width: 622px;
+    position: relative;
 }
 
 .imgTest {
     position: absolute;
-    left: 40px;
-    top: -0px;
+    left: -40px;
+    top: -100px;
     clip: rect(110px, 650px, 480px, 50px);
 }
